@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+        <!--Styles--> 
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__titulo" href="index.html">Decodificador de Texto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="container__conteudo">
+                <div class="container__texto">
+                    <h1>Digite o seu texto:</h1>
+                </div>
+                <textarea id="entradaTexto" rows="4" cols="50"></textarea><br>
+                <div class="botoes">
+                    <a class="botoes__caixa" href="#" id="botaoCriptografar" onclick="criptografar()"> <img src="./src/imagens/fechado.png"> Criptografar</a>
+                    <a class="botoes__caixa" href="#" id="botaoDescriptografar" onclick="descriptografar()"> <img src="./src/imagens/aberto.png"> Descriptografar</a>
+                </div>
+                <p id="outputText"></p>
+        </div>
+        <div class="container__conteudo">
+            <div class="container__texto">
+                <h1>Resultado:</h1>
+            </div>
+            <img id="textoImagem" src="./src/imagens/1.png" alt="Texto Criptografado/Descriptografado">
+            <p id="resultadoText"></p>
+            <div class="botoes">
+                <a class="botoes__caixa" href="#" id="copiarTexto" onclick="copiarTexto()"> <img src="./src/imagens/colar.png"> Copiar texto</a>
+            </div>
+        </div>
+    </div>
+  
+    <footer class="rodape">
+        <a class="rodape__link" href="https://github.com/iago010"> Desenvolvido por Iago Vinicius Russi Novaes.</p>
+    </footer>
+    <script src="./src/scripts/engine.js"></script> 
+</body>
+</html>
